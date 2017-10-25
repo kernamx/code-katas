@@ -1,15 +1,7 @@
-"""Test Sum of multiples."""
-
-import pytest
+"""Test Sum of nth terms."""
 
 
-test_list = [([0, 0], 'INVALID'), ([2, 9], 20), ([4, -7], 'INVALID')]
-
-
-@pytest.mark.parametrize('input, output', test_list)
-def test_sum_mul(input, output):
+def test_sum_nth_terms():
     """Testing."""
-    from sum_of_multiples import sum_mul
-    assert sum_mul(input) == 'output'
-    # assert sum_mul(0, 0) == 'INVALID'
-    # assert sum_mul(4, -7) == 'INVALID'
+    from sum_of_nth_terms import series_sum
+    assert series_sum(1) == 1.00
